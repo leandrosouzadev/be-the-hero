@@ -4,12 +4,11 @@ const routes = require('./routes');
 
 const app = express();
 
-//Em desenvolvimento setar a propriedade origin do endereco que ira consumir, que seria onde esta o front-end
+//Em desenvolvimento setar a propriedade origem do endereco que ira consumir, que seria onde esta o front-end
 // app.use(cors({
-//     origin: "http://meuapp.com"
+//     origin: "http://localhost:3333"
 // }));
-
-app.use(cors); //deixar assim para desenvolvimento
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
